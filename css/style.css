@@ -946,13 +946,17 @@ transform: scale(1.1);
 }
 
 /*Seccion 26*/
-.container sectionVeintiseis{
+.container-sectionVeintiseis{
     text-align: center;
     padding: 4rem 4rem 4rem 4rem;
+    text-decoration: none;
+    color: #65071A;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*Seccion 27*/
-.container sectionVeintisiete{
+.container-sectionVeintisiete{
+    font: 500px;
     background-color: #7B9E89;
     padding: 4rem 4rem 4rem 4rem;
 }
@@ -968,7 +972,7 @@ transform: scale(1.1);
 }
 
 /*Seccion 28*/
-.container sectionVeintiocho{
+.container-sectionVeintiocho{
     padding: 4rem 4rem 4rem 4rem;
 }
 .imgNosotros3 img{
@@ -977,7 +981,7 @@ transform: scale(1.1);
     border-radius: 2.1875rem;
 }
 /*Seccion 29*/
-.container sectionVeintinueve{
+.container-sectionVeintinueve{
     padding: 4rem 4rem 4rem 4rem;
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -1018,6 +1022,7 @@ transform: scale(1.1);
     margin: 40px;
     border-radius: 35px;
     transition: all 0.3s ease 0s;
+    text-align: center;
 }
 .botonCv button:hover {
 background-color: #65071A;
@@ -1025,7 +1030,7 @@ color: #F6B2B2;
 transform: scale(1.1);
 }
 /*Seccion 30*/
-.container sectionTreinta{
+.container-sectionTreinta{
     width:1184px;
     height: 800;    
     padding: 3rem;
@@ -1124,6 +1129,22 @@ background-color: #65071A;
 color: #F6B2B2;
 transform: scale(1.1);
 }
+
+.container-sectionSeptima{
+    width: 100%;
+    border: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: 40px 0px;
+    border-bottom: 2px solid #7B9E89;
+}  
 
 @media(max-width: 1260px) {
     .personValue{
