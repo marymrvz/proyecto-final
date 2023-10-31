@@ -10,9 +10,7 @@ font-family: 'Rubik', sans-serif;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-
 }
-
 body{
 background-color: #F7F0F1;
 font-family: 'Rubik', sans-serif;
@@ -22,7 +20,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center ;
 }
-
 header{
     background-color: #0C1713;
     display: flex;
@@ -38,7 +35,6 @@ header{
     z-index: 4;
     box-shadow: 10px 10px 10px rgba(88, 88, 88, 0.564);
 }
-
 .navBar{
     display: flex;
     width: 100%;
@@ -47,7 +43,6 @@ header{
     align-items: center;
     list-style:none;
 }
-
 .navBar .iconNavBar{
     gap: 1rem;
 }
@@ -56,7 +51,6 @@ header{
     list-style: none;
     background-color: #ffffffb6;
 }
-
 .navBarContainer a {
     text-decoration: none;
     color: #65071A;
@@ -65,11 +59,9 @@ header{
     padding: 1rem;
     width: 30rem;
 }
-
 .navBarContainer a:hover{
     font-weight: bolder;
 }
-
 .navBarContainer {
     display: block;
     position: relative;
@@ -162,7 +154,6 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 /*Seccion 1*/
 .sectionPrimaria {
     background-image: url("../assets/img/homenuevo.jpg");
@@ -228,7 +219,6 @@ transform: scale(1.1);
     margin-top: 3rem;
     font-size: 1.25rem;
 }
-
 .principalContainer{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -252,7 +242,6 @@ transform: scale(1.1);
     margin-top: 5rem;
     font-size: 1.2rem;
 }
-
 .info{
     padding: 1rem 1rem 1rem 1rem;
 }
@@ -284,7 +273,6 @@ transform: scale(1.1);
 .cardHome:hover{
     transform: scale(1.1);
 }
-
 .cardHome div{
     width: 100%;
     height: 100%;
@@ -298,7 +286,6 @@ transform: scale(1.1);
     height: 100%;
     object-fit: cover;
 }
-
 .divSegundaCards{
     display: flex;
     flex-direction: row;
@@ -308,7 +295,6 @@ transform: scale(1.1);
     margin-top: 1rem;
     margin-bottom: 8rem;  
 }
-
 /*Seccion 5*/
 .sectionQuinta{
     margin-top: 6rem;
@@ -1341,9 +1327,6 @@ transform: scale(1.1);
     .sectionSeptima {
         width: 100%;
     }
-    .sectionOctava{
-        gap: 10px;
-    }
     .sectionOctava img{
         display: flex;
         width: 38rem;
@@ -1978,7 +1961,7 @@ transform: scale(1.1);
         align-items: center;
     }
     .sectionOctava img{
-        width: 38rem;
+        width: 36rem;
         height: 25rem;
     }
     .sectionOctava h1{
@@ -2163,6 +2146,10 @@ transform: scale(1.1);
     }
     .card-4 {
         display: none;
+    }
+    .sectionOctava img{
+        width: 32rem;
+        height: 18rem;
     }
     .sectionNovena button {
         width: 5rem;
@@ -2474,6 +2461,10 @@ transform: scale(1.1);
         height: 3rem;
         font-size: 1rem;
     }
+    .sectionOctava img{
+        width: 26rem;
+        height: 17rem;
+    }
     .sectionOctava h1{
         font-size: 3rem;
     }
@@ -2581,8 +2572,10 @@ transform: scale(1.1);
         justify-content: center;
     }
     .containerUnete{
-        width: 25rem;
+        width: 18rem;
         display: flex;
+        flex-direction: column;
+        gap:10px;
         text-align: center;
         justify-content: center;
     }
