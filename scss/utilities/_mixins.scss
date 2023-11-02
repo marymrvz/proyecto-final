@@ -1,0 +1,28 @@
+@mixin flex($direction, $wrap, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin titlehead {
+    text-decoration: none;
+    color:$color-principal;
+    font-size: 4.5rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 4rem 4rem 4rem 4rem;
+}
+@mixin grid($grid-template-column, $grid-template-rows, $gap){
+    display: grid;
+    grid-template-columns: $grid-template-column;
+    grid-template-rows: $grid-template-rows;
+    gap: $gap;
+}
+@mixin subtitle {
+    text-decoration: none;
+    color:$color-principal;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+}

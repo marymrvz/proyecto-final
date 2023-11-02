@@ -1,0 +1,319 @@
+@import "../../components/card";
+@media(max-width: 550px){
+    .sectionTerciaria {
+        @include flex (column, wrap, center, center, none)
+        }
+    .sectionCuarta {
+        div {
+                .cardHome:nth-child(2) {
+                    display: none;
+                }
+                .cardHome:nth-child(5) {
+                    display: none;
+                }
+        }
+    }
+    .sectionQuinta {
+        div {
+            img {
+                width: 33px;
+                height: 33px;
+            }
+            .personValueTwo {
+                display: none;
+            }
+            .personValue {
+                display: block;
+                width: 12rem;
+                height: 18rem;
+                border-radius: 2rem;
+                overflow: hidden;
+                background-color: $color-terciario;
+                text-align: center;
+                font-size: 1.2rem;
+                margin: 15px;
+                padding: 10px 10px 10px 10px;
+                box-shadow: .0625rem .0625rem .625rem $color-secundario;
+                div {
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: 10px;
+                    text-align: center;
+                    img {
+                        width: 6rem;
+                        height: 6rem;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .sectionSexta {
+        div {
+            .blogCard {
+                width: 12.5rem;
+                height: 15rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
+                text-align: center;
+                div {
+                    width: 100%;
+                    height: 11rem;
+                }
+                h3 {
+                    padding: 0.5rem;
+                }
+            }
+            .blogCard:nth-child(2){
+                display: none}
+            }
+        }
+    .sectionOctava {
+        img {
+            width: 20rem;
+            height: 15rem;
+        }
+    }
+    .sectionNovena {
+        div {
+            .btn4{
+                display:none;
+            }
+            .btn5{
+                display:none;
+            }
+            .btn9{
+                display:none;
+            }
+            .btn10{
+                display:none;
+            }
+        }
+    }
+    .grid {
+        @include grid ((1fr, 1fr),(6, auto), 10px);
+        .cardProduct {
+            width: 9rem;
+            height: 15rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            background-color: $color-terciario;
+            text-align: center;
+            div {
+                width: 100%;
+                height: 11rem;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .grid-sectionDiez{
+            display: none;
+        }
+    }
+    .sectionTrece {
+        img {
+            width: 20rem;
+            height: 15rem;
+        }
+    }
+    .sectionCatorce {
+        div {
+            .btn14{
+                display:none;
+            }
+        }
+    }
+    .gridSkin {
+        @include grid ((1fr, 1fr),(6, auto), 10px);
+        .cardProduct {
+            width: 9rem;
+            height: 15rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            background-color: $color-terciario;
+            text-align: center;
+            div {
+                width: 100%;
+                height: 11rem;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .grid-sectionDieciseis{
+            display: none;
+        }
+    }
+    .sectionVeinte{
+        div {
+            .blogCard:nth-child(3){
+                display: none;
+            }
+        }
+    }
+    .sectionVeintidos {
+        div {
+            .cardIg {
+                width: 14rem;
+                height: 14rem;
+            }
+            .cardIg:nth-child(3){
+                display: none;
+            }
+        }
+    }
+    .sectionVeintitres {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeinticuatro {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeinticinco {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeintiSeis {
+        padding: 1rem;
+        font-size: 2rem;
+        div {
+            @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
+            img {
+                width: 15rem;
+                height: 22rem;
+            }
+            h1 {
+                font-size: 3rem;
+                padding: 1rem;
+            }
+        }
+    }
+    .sectionVeintisiete {
+        @include flex (column, none, space-between, center, none);
+        div {
+            img {
+                width: 28rem;
+                height: 22rem;
+                padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+            }
+        }
+    }
+    .sectionVeintiocho {
+        padding: 3rem 3rem 3rem 3rem;
+        div {
+            img {
+                width: 35rem;
+                height: 18rem;
+            }
+        }
+    }
+    .sectionVeintinueve {
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        div {
+            @include flex (column, wrap, space-evenly, center, none);
+            div {
+                img {
+                    width: 28rem;
+                    height: 18rem;
+                    border-radius: 30rem;
+                }
+            }
+        }
+    }
+    .sectionTreinta {
+        width: 540px;
+        @include flex (column, none, center, start, none);
+        h2 {
+            font-size: 1.875rem;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        div {
+            form {
+                width: 20rem;
+                .datos {
+                    label {
+                        width: 3rem;
+                    }
+                    input {
+                        width: 15rem;
+                        font-size: 1rem;
+                    }
+                }
+                .coment {
+                    label {
+                        width: 4rem;
+                    }
+                    input {
+                        width: 15rem;
+                        height: 18rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        div {
+            a {
+                button {    
+                    width: 12rem;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

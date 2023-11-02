@@ -1,0 +1,79 @@
+@import "../../components/card";
+@media(max-width: 425px){
+    body{
+        font-size: 0.8rem
+    }
+    header {
+        @include flex(column, nowrap, none, center, none);
+        nav {
+            @include flex(row, nowrap, space-between, center, none);
+            .navBarContainer {
+                width: 80px;
+            }
+            .logo {
+                display: none;
+            }
+            .iconNavBar {
+                a {
+                    img{
+                        width: 33px;
+                        height: 33px;
+                        }
+                    }
+                }
+        }
+    }
+    .sectionSeptima {
+        @include flex(column, wrap, center, center, none);
+        height: 25rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        form {
+            width: 15rem;
+            @include flex(row, wrap, center, center, 10px);
+            input {
+                    width: 10rem;
+                    font-size: 0.7rem;
+                }
+                div {
+                    a {
+                        button {
+                            width: 5rem;
+                            height: 4rem;    
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+    }
+    .sectionOctava {
+        img {
+            width: 20rem;
+            height: 16rem;
+        }
+    }
+    .sectionNovena {
+        div {
+            .btn3{
+                display:none;
+            }
+            .btn8{
+                display:none;
+            }
+        }
+    }
+    .sectionTrece {
+        img {
+            width: 20rem;
+            height: 16rem;
+        }
+    }
+    .sectionCatorce {
+        div {
+            .btn13{
+                display:none;
+            }
+        }
+    }
+}

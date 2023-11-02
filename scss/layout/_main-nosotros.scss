@@ -1,0 +1,210 @@
+main {
+    width: 100%;
+}
+.sectionVeintiseis {
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    div {
+        @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
+        justify-content: center;
+        h1 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            @include flex (none, none, center, center, none);
+            color:$color-principal;
+            font-size: 4rem;
+            font-family: 'Nunito', sans-serif;
+            padding: 4rem 4rem 4rem 4rem;
+        }
+        img {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 18rem;
+            height: 22rem;
+            margin-left: 2rem;
+            @include flex (none, wrap, center, center, none)
+        }
+        p {
+            grid-column: 1/3;
+            grid-row: 2/3;
+            @include flex (none, none, center, center, none);
+            font-size: 1.5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+.sectionVeintisiete {
+    font-size: 1.25rem;
+    background-color: $color-quinto;
+    padding: 4rem 4rem 4rem 4rem;
+    @include flex (row, none, space-between, center, none);
+    div {
+        @include flex (column, none, none, center, 20px);
+        h2 {
+            font-size: 1.875rem;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        p {
+            padding: 2rem;
+            text-align: center;
+        }
+    }
+    div {
+        img {
+            width: 36rem;
+            height: 28rem;
+            border-radius: 8rem;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+    }
+}
+.sectionVeintiocho {
+    margin-top: 2rem;
+    padding: 4rem 4rem 4rem 4rem;
+    @include flex (column, wrap, center, center, 30px);
+    h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    div {
+        img {
+            width: 66rem;
+            height: 30rem;
+            border-radius: 2.1875rem;
+        }
+    }
+}
+.sectionVeintinueve{
+    padding: 2rem 2rem 2rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @include flex (row, wrap, space-evenly, center, none);
+    div {
+        @include flex (row, none, space-between, center, 50px);
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+        .containerTrabajo {
+            width: 600px;
+            @include flex (column, nowrap, space-evenly, center, none);
+            h2 {
+                font-size: 1.875rem;
+                padding: 2rem 2rem 2rem 2rem;
+            }
+            p {
+                font-size: 1.6rem;
+            }
+        }
+        div {
+            img {    
+                width: 640px;
+                height: 448px;
+                border-radius: 40rem;}
+        }
+    }
+    div {
+        justify-content: center;
+        a {
+            button {
+                background-color: $color-principal;
+                border-style: ridge;
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                font-size: 1rem;
+                width: 16rem;
+                height: 4rem;
+                color: $color-button1;
+                padding: 10px 10px 10px 10px;
+                border: 5px none;
+                margin: 40px;
+                border-radius: 35px;
+                transition: all 0.3s ease 0s;
+                text-align: center;
+                &:hover {
+                    background-color: $color-button2;
+                    color: $color-principal;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+.sectionTreinta {
+    width:1100px;
+    height: 800px;    
+    padding: 4rem;
+	border-radius: 2rem;
+    background-color: $color-button1;
+    @include flex (column, wrap, space-evenly, center, 20px);
+    margin: 4rem;
+    h2 {
+        font-size: 1.875rem;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    div {
+        form {
+            width: 30rem;
+            height: 4rem;
+            padding: 2rem;
+            border-radius:30px;
+            background-color:$color-button1;
+            @include flex(row, nowrap, space-evenly, center, 30px);
+            .datos {
+                label {
+                    width: 4rem;
+                    font-weight:bold;
+                    padding: 1rem;
+                }
+                input {
+                    background-color: $background-color;
+                    width: 18rem;
+                    height: 4rem;
+                    color: $color-secundario;
+                    padding: 10px 10px 10px 10px;
+                    border: 10px none;
+                    font-size: 1.2rem;
+                    border-radius: 10px;}
+            }
+            .coment {
+                label {
+                    width: 4rem;
+                    font-weight:bold;
+                }
+                input {
+                    background-color: $background-color;
+                    width: 18rem;
+                    height: 20rem;
+                    color: $color-secundario;
+                    padding: 10px 10px 10px 10px;
+                    border: 10px none;
+                    font-size: 1.2rem;
+                    border-radius: 10px;}
+                }
+            }
+        }
+    div {
+        a {
+            button {    
+                background-color: $color-principal;
+                border-style: ridge;
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                font-size: 1rem;
+                width: 16rem;
+                height: 4rem;
+                color: $color-button1;
+                padding: 10px 10px 10px 10px;
+                border: 5px none;
+                margin: 40px;
+                border-radius: 35px;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    background-color: $color-principal;
+                    color: $color-button2;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

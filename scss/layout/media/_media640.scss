@@ -1,0 +1,302 @@
+@import "../../components/card";
+@media(max-width: 640px) {
+    .sectionSecundaria {
+        margin: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .sectionTerciaria {
+        article {
+            margin: 1rem;
+            img {
+                width: 7rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+                padding: 0.5rem;
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+    .sectionSexta {
+        div {
+            .blogCard {
+                width: 14rem;
+                height: 16rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
+                text-align: center;
+                div {
+                    width: 100%;
+                    height: 12rem;
+                }
+                h3 {
+                    padding: 0.5rem;
+                }
+            }
+            .blogCard:nth-child(3){
+                display: none}
+            }
+        }
+    footer{
+        .containerFooter {
+            .boxFooter {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .grid {
+        @include grid ((1fr, 1fr),(6, auto), 15px);
+        .cardProduct {
+            width: 11.25rem;
+            height: 18rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            background-color: $color-terciario;
+            text-align: center;
+            div {
+                width: 100%;
+                height: 11.25rem;
+                object-fit: cover;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .cardDestacadoMaq{
+            width: 11.25rem;
+            height: 18rem;
+            text-align: center;
+        }
+        .grid-sectionDiez{
+            grid-column: 1/6;
+            grid-row: 1/1;
+        }
+        .grid-sectionOnce{
+            display:none;
+        }
+        .item--1{
+            display: none;
+        }
+        .item--2{
+            display: none;
+        }
+        .item--3{
+            grid-column: 2/3;
+            grid-row:2/3;
+        }
+        .item--4{
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        .item--5{
+            grid-column: 2/3;
+            grid-row:3/4;
+        }
+        .item--6{
+            grid-column: 3/4;
+            grid-row:3/4;
+        }
+        .item--7{
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+        .item--8{
+            display:none;
+        }
+        .item--9{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .item--10{
+            grid-column: 3/4;
+            grid-row:4/5;
+        }
+        .item--11{
+            grid-column: 4/5;
+            grid-row:4/5;
+        }
+        .item--12{
+            display:none;
+        }
+    }
+    .sectionCatorce {
+        div {
+            .btn15{
+                display:none;
+            }
+        }
+    }
+    .sectionQuince{
+        div {
+            .cardTrend:nth-child(2){
+                display: none;
+            }
+        }
+    }
+    .sectionVeinte{
+        div {
+            .blogCard:nth-child(3){
+                display: none;
+            }
+        }
+    }
+    .sectionVeintidos {
+        div {
+            .cardIg {
+                width: 14rem;
+                height: 14rem;
+            }
+            .cardIg:nth-child(3){
+                display: none;
+            }
+        }
+    }
+    .sectionVeintitres {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeinticuatro {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeinticinco {
+        div {
+            div {
+                .blogCard {
+                    width: 14rem;
+                    height: 16rem;
+                    div {
+                        width: 100%;
+                        height: 12rem;
+                        object-fit: cover;
+                    }
+                }
+                .blogCard:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .sectionVeintiSeis {
+        padding: 1rem;
+        font-size: 2rem;
+        div {
+            @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
+            img {
+                width: 15rem;
+                height: 22rem;
+            }
+            h1 {
+                font-size: 3rem;
+                padding: 1rem;
+            }
+        }
+    }
+    .sectionVeintisiete {
+        @include flex (column, none, space-between, center, none);
+        div {
+            img {
+                width: 28rem;
+                height: 22rem;
+                padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+            }
+        }
+    }
+    .sectionVeintiocho {
+        padding: 3rem 3rem 3rem 3rem;
+        div {
+            img {
+                width: 35rem;
+                height: 18rem;
+            }
+        }
+    }
+    .sectionVeintinueve {
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        div {
+            @include flex (column, wrap, space-evenly, center, none);
+            div {
+                img {
+                    width: 28rem;
+                    height: 18rem;
+                    border-radius: 30rem;
+                }
+            }
+        }
+    }
+    .sectionTreinta {
+        width: 540px;
+        @include flex (column, none, center, start, none);
+        h2 {
+            font-size: 1.875rem;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        div {
+            form {
+                width: 20rem;
+                .datos {
+                    label {
+                        width: 3rem;
+                    }
+                    input {
+                        width: 15rem;
+                        font-size: 1rem;
+                    }
+                }
+                .coment {
+                    label {
+                        width: 4rem;
+                    }
+                    input {
+                        width: 15rem;
+                        height: 18rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        div {
+            a {
+                button {    
+                    width: 12rem;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.sectionDiecinueve {
+    width: 100%;
+    @include flex (row, wrap, space-between, center, none);
+    div {
+        h1 {
+            @include titlehead;
+            margin-left: 8rem;
+            text-align: center;
+        }
+    }
+    div {
+        img {
+            @include flex (none, nowrap, center, center, none);
+            width: 45rem;
+            height: 34rem;
+        }
+    }
+}
+.sectionVeinte {
+    width: 100%;
+    background-color: $color-quinto;
+    padding: 4rem;
+    h2 {
+        text-decoration: none;
+        color:$color-cuarto;
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    div {
+        @include flex(row, nowrap, space-evenly, center, 5px)
+    }
+}
+.sectionVeintiuno{
+    width: 100%;
+    @include flex (row, wrap, space-evenly, center, 30px);
+    padding: 2rem;
+    .recomendationContainer {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        @include flex (column, none, center, none, none);
+        @include subtitle;
+        img {
+            width: 34rem;
+            height: 24rem;
+            border-radius: 3rem;
+            text-align: center;
+        }
+        h3 {
+            padding-top: 1rem;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+    div {
+        .tendenciaContainer {
+            @include flex(column, none, center, flex-end, none);
+            div {
+                @include flex(row, none, flex-end, center, none);
+                h3 {
+                    margin-right: 16rem;
+                }
+            }
+        }
+    }
+}
+.sectionVeintidos {
+    padding: 3rem;
+    width: 100%;
+    @include flex(row, wrap, none, none, none);
+    @include subtitle;
+    .igContainer {
+        margin-top: 1rem;
+        width: 100%;
+        @include flex(row, nowrap, space-evenly, center, 10px);
+    }
+}
+.sectionVeintitres {
+    width: 100%;
+    background-color: $color-button2;
+    margin-top: 1rem;
+    padding: 2rem;
+    @include subtitle;
+    .topicContainer {
+        @include flex (column, wrap, none, none, 20px);
+        width: 100%;
+        div {
+            @include flex (row, nowrap, space-evenly, center, none);
+        }
+        .masContainer {
+            @include flex (none, none, flex-end, center, none);
+            margin: 2rem;
+        }
+    }
+}
+.sectionVeinticuatro {
+    background-color: $background-color;
+    @extend .sectionVeintitres;
+}
+.sectionVeinticinco {
+    @extend .sectionVeintitres;
+}

@@ -1,0 +1,28 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./base/reset";
+@import "./base/typo";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+@import "./layout/main-maquillaje";
+@import "./layout/main-skin";
+@import "./layout/main-blog";
+@import "./layout/main-nosotros";
+@import "./layout/media/media1260";
+@import "./layout/media/media1024";
+@import "./layout/media/media900";
+@import "./layout/media/media768";
+@import "./layout/media/media640";
+@import "./layout/media/media550";
+@import "./layout/media/media425";
+@import "./layout/media/media320";
+@import "./components/card";
+/*Parametros generales body*/
+body{
+    background-color: $background-color;
+    font-family: 'Rubik', sans-serif;
+    color: $color-secundario;
+    font-size: 1.1rem;
+    @include flex (none, wrap, center, none, none);
+}

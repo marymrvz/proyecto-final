@@ -1,0 +1,154 @@
+.sectionTrece{
+    text-align: center;
+    width: 100%;
+    background-color:$color-button1;
+    @include flex(row, wrap, center, center, 30px);
+    h1 {
+        @include titlehead;
+    }
+    img {
+        width: 45rem;
+        height: 34rem;
+    }
+}
+.sectionCatorce {
+    text-align: center;
+    @include flex(row, wrap, center, center, none);
+    padding: 4rem 4rem 0rem 4rem;
+    div{
+        a {
+            button {
+                background-color: $color-terciario;
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                color:$color-secundario;
+                width: 9rem;
+                height: 3rem;
+                padding: 10px 10px 10px 10px;
+                border: 5px none;
+                margin: 15px;
+                border-radius: 10px;
+                transition: all 0.3s ease 0s;
+                &:hover {
+                    background-color: $color-principal;
+                    color: $color-button2;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+.sectionQuince {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    @include flex (column, wrap, none, none, none);
+    div {
+        text-align: center;
+        @include flex (row, nowrap, space-evenly, center, 0.01rem);
+        margin-bottom: 1rem; 
+    }
+}
+.gridSkin{
+    @include grid(repeat(minmax(200px, 1fr)),repeat(7, auto), 25px);
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    .grid-sectionDieciseis{
+        grid-column: 1/6;
+        grid-row: 1/2;
+        text-align: center;
+        padding: 1rem 1rem 0rem 1rem;
+        @include flex(row, nowrap, space-between, center, 0.1rem);
+    }
+    .grid-sectionDiecisiete{
+        grid-column: 1/2;
+        grid-row:2/6;
+        div {
+            text-align: left;
+            margin-left: 0;
+            list-style:none;
+            padding: 0.1rem;
+            @include flex(column, nowrap, start, center, 0.1rem);
+        ul{
+            li {
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                padding: 0.2rem;
+            }
+        }
+        }
+    }
+    .item-1{
+        grid-column: 2/3;
+        grid-row:2/3;
+    }
+    .item-2{
+        grid-column: 3/4;
+        grid-row:2/3;
+    }
+    .item-3{
+        grid-column: 4/6;
+        grid-row: 2/3;
+    }
+    .item-4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .item-5{
+        grid-column: 3/4;
+        grid-row:3/4;
+    }
+    .item-6{
+        grid-column: 4/5;
+        grid-row:3/4;
+    }
+    .item-7{
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+    .item-8{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .item-9{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .item-10{
+        grid-column: 4/5;
+        grid-row: 4/5;
+    }
+    .item-11{
+        grid-column: 5/6;
+        grid-row: 4/5;
+    }
+    .item-12{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .item-13{
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }
+    .item-14{
+        grid-column: 4/5;
+        grid-row: 5/6;
+    }
+    .item-15{
+        grid-column: 5/6;
+        grid-row: 5/6;
+    }
+    .item-16{
+        grid-column: 2/4;
+        grid-row:6/7;
+    }
+    .item-17{
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+    .item-18{
+        grid-column: 5/6;
+        grid-row: 6/7;
+    }
+}

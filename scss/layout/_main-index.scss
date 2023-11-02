@@ -1,0 +1,164 @@
+.sectionPrimaria{
+    background-image: url("../assets/img/homenuevo.jpg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include flex(column, wrap, center, center, 0.5rem);
+    object-fit: cover;
+    div {
+        h1 {
+            text-align: center;
+        }
+    }
+    div {
+        a{
+            button {
+                background-color: $color-principal;
+                border-style: ridge;
+                text-decoration: none;
+                font-family: 'Rubik', sans-serif;
+                font-size: 1.5rem;
+                width: 15rem;
+                height: 4rem;
+                color: $color-button1;
+                padding: 10px 10px 10px 10px;
+                border: 5px none;
+                margin: 40px;
+                border-radius: 35px;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    background-color: $color-principal;
+                    color: $color-button2;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    img {
+        margin-top: 4rem;
+    }
+}
+.sectionSecundaria {
+    text-align: center;
+    @include flex (column, wrap, center, center, 1rem);
+    margin: 10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 1.5rem;
+    div {
+        a {
+            img {
+                width: 18rem;
+            }
+        }
+    }
+}
+.sectionTerciaria{
+    @include flex(row, wrap, space-evenly, center, 0.1rem);
+    width: 100%;
+    background-color: $color-terciario;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+    article {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        @include flex(column, wrap, space-evenly, center, 0px);
+        &:hover{
+            transform: scale(1.1);
+        }
+        img {
+            width: 18rem;
+        }
+    }
+}
+.sectionCuarta {
+    margin-top: 5rem;
+    @include subtitle;
+    div {
+        @include flex(row, nowrap, space-evenly, center, 0.1rem);
+        margin-top: 1rem;
+        margin-bottom: 3.5rem;
+    }
+}
+.sectionQuinta {
+    margin-top: 5rem;
+    @include subtitle;
+    div {
+        @include flex(row, nowrap, center, center, none);
+    }
+}
+.sectionSexta {
+    background-color: $color-quinto;
+    margin-top: 2rem;
+    padding: 4rem;
+    h2 {
+        text-decoration: none;
+        color:$color-cuarto;
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    div {
+        @include flex(row, nowrap, space-evenly, center, none)
+    }
+}
+.sectionSeptima {
+    width: 100%;
+    background-color: $color-button1;
+    height: 15rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    @include flex(row, nowrap, space-evenly, center, none);
+    div {
+        h3 {
+            padding: 0.5rem;
+        }
+        p {
+            padding-bottom: 0.5rem;
+        }
+    }
+    form {
+        width: 30rem;
+        height: 4rem;
+        padding: 2rem;
+        border-radius:50px;
+        background-color:$color-button1;
+        @include flex(row, nowrap, space-evenly, center, 20px);
+        input {
+            background-color: $background-color;
+            width: 18rem;
+            height: 4rem;
+            color: $color-secundario;
+            padding: 10px 10px 10px 10px;
+            border: 10px none;
+            font-size: 1.2rem;
+            border-radius: 10px;
+        }
+        div {
+            a {
+                button {
+                    background-color: $color-principal;
+                    color: $color-button1;
+                    width: 6.875rem;
+                    height: 4rem;
+                    padding: 10px 10px 10px 10px;
+                    border: 5px none;
+                    border-radius: 35px;    
+                    font-size: 1.2rem;
+                    transition: all 0.3s ease 0s;
+                    text-align: center;
+                    &:hover {
+                        background-color: $color-principal;
+                        color: $color-button2;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

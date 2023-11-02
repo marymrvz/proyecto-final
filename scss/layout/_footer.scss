@@ -1,0 +1,75 @@
+footer{
+    width: 100%;
+    margin-top: 4rem;
+    padding: 80px 0px;
+    background-color: $color-secundario;
+    text-decoration: none;
+    .containerFooter {
+        width: 100%;
+        @include flex(none, wrap, space-evenly, center, 0.1rem);
+        margin: auto;
+        padding: 40px 0px;
+        border-bottom: 2px solid $color-quinto;
+        .boxFooter {
+            @include flex(column, wrap, none, none, 1.5rem);
+            h4 {
+                font-size: 20px;
+                color: $color-terciario;
+                margin-bottom: 8px;
+                font-weight: 400;
+                display: inline-block;
+            }
+            ul {
+                @include flex(column, nowrap, none, none, 0.2rem);
+                li {
+                    a {
+                        font-size: 18px;
+                        display: block;
+                        margin-bottom: 8px;
+                        text-decoration: none;
+                        margin-top: 10px;
+                        color: $color-terciario;
+                        font-family: 'Rubik', sans-serif;
+                        transition: all .3s ease;
+                        &:hover {
+                            color: $color-footer;
+                            padding-left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+        .boxIcon {
+            @include flex(column, nowrap, space-evenly, center, 10px);
+            transition: all .5s ease;
+            .iconFooter {
+                a:hover {
+                    opacity: 0.6;
+                }
+            }
+            }
+    }
+    .boxAviso {
+        @include flex (row, wrap, space-evenly, center, none);
+        margin-top: 2rem;
+        padding-bottom: 3rem;
+        text-decoration: none;
+        li {
+            a {    
+                text-decoration: none;
+                color: $color-terciario;
+                font-weight: 300;
+                font-size: 16px;
+                display: block;
+                margin-bottom: 15px;
+                font-family: 'Rubik', sans-serif;
+                transition: all .3s ease;
+                &:hover {
+                    color: $color-footer;
+                    padding-left: 4px;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

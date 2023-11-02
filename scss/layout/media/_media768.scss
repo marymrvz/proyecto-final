@@ -1,0 +1,239 @@
+@import "../../components/card";
+@media(max-width: 768px){
+    header {
+        nav {
+            @include flex(row, nowrap, none, center, none);
+            .navBarContainer {
+                width: 100px;
+            }
+            .iconNavBar {
+                a {
+                    img{
+                        width: 44px;
+                        height: 44px;
+                        }
+                    }
+                }
+        }
+    }
+    .sectionCuarta {
+        div {
+            article {
+                width: 14rem;
+                height: 14rem;
+                padding: 1.5rem;
+                gap: 6px;
+                font-size: 0.8rem;
+            }
+                .cardHome:nth-child(3) {
+                    display: none;
+                }
+                .cardHome:nth-child(6) {
+                    display: none;
+                }
+        }
+    }
+    .sectionQuinta {
+        div {
+            .personValueTwo {
+                width: 12rem;
+                height: 17rem;
+                border-radius: 2rem;
+                overflow: hidden;
+                font-size: 0.8rem;
+                margin: 10px;
+                padding: 10px 10px 10px 10px;
+                div {
+                    margin: 2px;
+                    img {
+                        width: 4rem;
+                        height: 4rem;
+                        margin: 0px;
+                    }
+                }
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+    .sectionOctava {
+        width: 100%;
+        h1 {
+            font-size: 3rem;
+        }
+        img {
+            width: 32rem;
+            height: 18rem;
+        }
+    }
+    .sectionNovena {
+        div {
+            a {
+                button {
+                    width: 5rem;
+                    height: 3rem;
+                    padding: 10px 10px 10px 10px;
+                    border: 5px none;
+                    margin: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .grid {
+        @include grid ((1fr, 1fr),(6, auto), 18px);
+        .grid-sectionDiez{
+            grid-column: 1/6;
+            grid-row: 1/1;
+        }
+        .grid-sectionOnce{
+            grid-column: 1/1;
+            grid-row: 2/6;
+        }
+        .item--1{
+            grid-column: 2/3;
+            grid-row:2/3;
+        }
+        .item--2{
+            grid-column: 3/4;
+            grid-row:2/3;
+        }
+        .item--3{
+            display: none;
+        }
+        .item--5{
+            grid-column: 2/3;
+            grid-row:3/4;
+        }
+        .item--6{
+            grid-column: 3/4;
+            grid-row:3/4;
+        }
+        .item--7{
+            display: none;
+        }
+        .item--9{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .item--10{
+            grid-column: 3/4;
+            grid-row:4/5;
+        }
+        .item--11{
+            display: none;
+        }
+    }
+    .sectionTrece {
+        width: 100%;
+        h1 {
+            font-size: 3rem;
+        }
+        img {
+            width: 32rem;
+            height: 18rem;
+        }
+    }
+    .sectionCatorce {
+        div {
+            a {
+                button {
+                    width: 5.5rem;
+                    height: 3rem;
+                    padding: 8px 8px 8px 8px;
+                    border: 5px none;
+                    margin: 3px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .sectionQuince{
+        div {
+            .cardTrend:nth-child(3){
+                display: none;
+            }
+        }
+    }
+    .gridSkin {
+        @include grid ((1fr, 1fr), (7, auto), 15px);
+        justify-content: center;
+        padding: 0.5rem;
+        .cardDestacadoSkin {
+            width: 27rem;
+        }
+        .grid-sectionDieciseis{
+            grid-column: 1/6;
+            grid-row: 1/1;
+        }
+        .item-1{
+            grid-column: 2/3;
+            grid-row:2/3;
+        }
+        .item-2{
+            display: block;
+        }    .item-3{
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+        .item-4{
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .item-5{
+            grid-column: 3/4;
+            grid-row:4/5;
+        }
+        .item-6{
+            display: none;
+        }
+        .item-8{
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        .item-9{
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+        .item-10{
+            display: none;
+        }
+        .item-12{
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+        .item-13{
+            grid-column: 3/4;
+            grid-row: 6/7;
+        }
+        .item-14{
+            display: none;
+        }
+        .item-16{
+            display: none;
+        }
+        .item-17{
+            grid-column: 2/4;
+            grid-row:7/8;
+        }
+    }
+    .sectionDiecinueve {
+        width: 100%;
+        @include flex (row, wrap, center, center, none);
+        div {
+            h1 {
+                font-size: 3rem;
+                margin-left: 1rem;
+                text-align: center;
+            }
+        }
+        div {
+            img {
+                @include flex (none, nowrap, flex-end, none, none);
+                width: 35rem;
+                height: 30rem;
+            }
+        }
+    }
+}
