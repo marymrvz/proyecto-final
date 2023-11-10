@@ -41,7 +41,14 @@
 .sectionQuince {
     margin-top: 1rem;
     margin-bottom: 3rem;
-    padding: 1rem;
+    padding: 4rem;
+    h1 {
+        text-decoration: none;
+        color:$color-principal;
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        padding: 3rem 3rem 3rem 3rem;
+    }
     @include flex (column, wrap, none, none, none);
     div {
         text-align: center;

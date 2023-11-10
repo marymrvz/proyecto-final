@@ -6,14 +6,14 @@ footer{
     text-decoration: none;
     .containerFooter {
         width: 100%;
-        @include flex(none, wrap, space-evenly, center, 0.1rem);
+        @include flex(none, wrap, space-evenly, center, 1.6rem);
         margin: auto;
         padding: 40px 0px;
         border-bottom: 2px solid $color-quinto;
         .boxFooter {
             @include flex(column, wrap, none, none, 1.5rem);
             h4 {
-                font-size: 20px;
+                font-size: 1.3rem;
                 color: $color-terciario;
                 margin-bottom: 8px;
                 font-weight: 400;
@@ -23,7 +23,7 @@ footer{
                 @include flex(column, nowrap, none, none, 0.2rem);
                 li {
                     a {
-                        font-size: 18px;
+                        font-size: 1.1rem;
                         display: block;
                         margin-bottom: 8px;
                         text-decoration: none;
@@ -43,11 +43,14 @@ footer{
             @include flex(column, nowrap, space-evenly, center, 10px);
             transition: all .5s ease;
             .iconFooter {
-                a:hover {
+                a {
+                    transition: all .5s ease;
+                    &:hover {
                     opacity: 0.6;
+                    }
                 }
             }
-            }
+        }
     }
     .boxAviso {
         @include flex (row, wrap, space-evenly, center, none);

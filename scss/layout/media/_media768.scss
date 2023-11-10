@@ -46,14 +46,21 @@
                 div {
                     margin: 2px;
                     img {
-                        width: 4rem;
-                        height: 4rem;
+                        width: 6rem;
+                        height: 6rem;
                         margin: 0px;
                     }
                 }
                 p {
                     font-size: 0.7rem;
                 }
+            }
+        }
+    }
+    footer{
+        .containerFooter {
+            .boxFooter {
+                margin-bottom: 40px;
             }
         }
     }
@@ -71,7 +78,7 @@
         div {
             a {
                 button {
-                    width: 5rem;
+                    width: 5.5rem;
                     height: 3rem;
                     padding: 10px 10px 10px 10px;
                     border: 5px none;
@@ -233,6 +240,73 @@
                 @include flex (none, nowrap, flex-end, none, none);
                 width: 35rem;
                 height: 30rem;
+            }
+        }
+    }
+    .sectionVeintiocho {
+        padding: 2rem 2rem 2rem 2rem;
+        h3 {
+            font-size: 1.2rem;
+        }
+        div {
+            img {
+                width: 30rem;
+                height: 17rem;
+            }
+        }
+    }
+    .sectionVeintinueve {
+        padding: 1rem 1rem 1rem 1rem;
+        div {
+            div {
+                img {
+                    width: 25rem;
+                    height: 15rem;
+                    border-radius: 30rem;
+                }
+            }
+        }
+    }
+    .sectionTreinta {
+        width:470px;   
+        padding: 1rem;
+        margin-left: 6rem;
+        h2 {
+            font-size: 1.1rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+        .datosMensaje {
+            form {
+                width: 20rem;
+                height: 45rem;
+                padding: 0.5rem;
+                .datos {
+                    label {
+                        width: 8rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                    input {
+                        width: 14rem;
+                        height: 4rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                .coment {
+                    @include flex(column, nowrap, space-evenly, center, 5px);
+                    label {
+                        width: 8rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                    input {
+                        width: 14rem;
+                        height: 18rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                }
             }
         }
     }

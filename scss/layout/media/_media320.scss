@@ -1,0 +1,43 @@
+@import "../../components/card";
+@media(max-width: 320px){
+    body{
+        font-size: 0.8rem;
+    }
+    .sectionDiecinueve {
+        h1{
+            font-size: 2.5rem;
+        }
+        div {
+            img {
+                width: 17rem;
+                height: 13rem;
+            }
+        }
+    }
+    .sectionVeintiuno{
+        padding: 1rem;
+    }
+    .sectionVeintiseis {
+        div {
+            h1 {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 2.5rem;
+                width: 18rem;
+                text-align: center;
+            }
+            img {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 11rem;
+                height: 13rem;
+                margin-left: 5rem;
+            }
+            p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                width: 280px;
+            }
+        }
+    }
+}

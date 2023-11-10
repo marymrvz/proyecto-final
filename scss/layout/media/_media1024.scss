@@ -38,13 +38,15 @@
         div {
             .personValueTwo {
                 width: 13.75rem;
-                height: 17.875rem;
+                height: 18.875rem;
                 border-radius: 2rem;
                 overflow: hidden;
                 font-size: 1rem;
                 margin: 20px;
                 padding: 10px 10px 10px 10px;
                 div {
+                    width: 6.5rem;
+                    height: 6.5rem;
                     margin: 5px;
                     img {
                         width: 5.5rem;
@@ -92,6 +94,7 @@
         }
     }
     .sectionNovena {
+        padding: 3rem 3rem 3rem 3rem;
         div {
             a {
                 button {
@@ -247,26 +250,48 @@
             .blogCard {
                 width: 15rem;
                 height: 17rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
+                text-align: center;
                 div {
                     width: 100%;
                     height: 13rem;
                     object-fit: cover;
                 }
+                h3 {
+                    padding: 0.5rem;
+                }
+            }
+        }
+        .masContainer {
+            h4 {
+                font-size: 1.2rem;
             }
         }
     }
-    .sectionVeintiSeis {
-        width: 100%;
-        padding: 3rem;
-        font-size: 2rem;
+    .sectionVeintiseis {
+        padding: 2rem;
         div {
+            h1 {
+                font-size: 3rem;
+                font-family: 'Nunito', sans-serif;
+                padding: 1rem;
+            }
             img {
                 width: 18rem;
-                height: 26rem;
+                height: 22rem;
+                margin-left: 4rem;
+            }
+            p {
+                width: 800px;
             }
         }
     }
     .sectionVeintisiete {
+        padding: 2rem 2rem 2rem 2rem;
+        div {
+            @include flex (column, none, none, center, 10px);
+        }
         div {
             img {
                 width: 28rem;
@@ -297,7 +322,11 @@
         }
     }
     .sectionTreinta {
-        width: 680px;
-        @include flex (column, none, center, start, none);
+        margin-left: 8rem;
+        margin-bottom: 3rem;
+        h2 {
+            font-size: 1.3rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
     }
 }

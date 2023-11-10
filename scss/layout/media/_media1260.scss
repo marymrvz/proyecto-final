@@ -13,6 +13,8 @@
             .blogCard {
                 width: 18rem;
                 height: 20rem;
+                font-size: 1rem;
+                margin: 0.5rem;
                 div {
                     width: 100%;
                     height: 15rem;
@@ -193,6 +195,8 @@
             .blogCard {
                 width: 18rem;
                 height: 20rem;
+                font-size: 1rem;
+                margin: 0.5rem;
                 div {
                     width: 100%;
                     height: 15rem;
@@ -207,12 +211,16 @@
                 width: 30rem;
                 height: 20rem;
             }
+            h3 {
+                width: 30rem;
+                font-size: 1.2rem;
+            }
         }
     }
     .igContainer {
         .cardIg {
-            width: 19rem;
-            height: 19rem;
+            width: 18rem;
+            height: 18rem;
         }
     }
     .topicContainer{
@@ -220,6 +228,8 @@
             .blogCard {
                 width: 18rem;
                 height: 20rem;
+                font-size: 1rem;
+                margin: 0.5rem;
                 div {
                     width: 100%;
                     height: 15rem;
@@ -228,11 +238,16 @@
             }
         }
     }
-    .sectionVeintiSeis {
+    .sectionVeintiseis {
         div {
+            h1 {
+                font-size: 3.5rem;
+                padding: 2rem;
+            }
             img {
-                width: 28rem;
-                height: 32rem;
+                width: 22rem;
+                height: 27rem;
+                margin-left: 4rem;
             }
         }
     }
@@ -252,19 +267,70 @@
             }
         }
     }
-    .sectionVeintinueve {
+    .sectionVeintinueve{
         div {
+            .containerTrabajo {
+                h2 {
+                    font-size: 1.5rem;
+                    padding: 1rem 1rem 1rem 1rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
             div {
-                img {
+                img {    
                     width: 30rem;
                     height: 20rem;
-                    border-radius: 30rem;
+                }
+            }
+        }
+        div {
+            a {
+                button {
+                    width: 14rem;
+                    margin: 20px;
                 }
             }
         }
     }
     .sectionTreinta {
-        width: 680px;
-        @include flex (none, none, center, start, none);
+        width:800px;   
+        padding: 2rem;
+        margin-left: 10rem;
+        h2 {
+            font-size: 1.6rem;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+        .datosMensaje {
+            @include flex(column, wrap, space-between, center, 5px);
+            form {
+                width: 40rem;
+                height: 30rem;
+                padding: 0rem;
+                .datos {
+                    label {
+                        width: 6rem;
+                        margin: 0.5rem;
+                    }
+                    input {
+                        width: 16rem;
+                        height: 4rem;
+                    }
+                }
+                .coment {
+                    label {
+                        width: 5rem;
+                        margin: 0.5rem;
+                    }
+                    input {
+                        width: 16rem;
+                        height: 18rem;
+                        margin: 1rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

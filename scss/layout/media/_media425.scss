@@ -1,7 +1,7 @@
 @import "../../components/card";
 @media(max-width: 425px){
     body{
-        font-size: 0.8rem
+        font-size: 0.8rem;
     }
     header {
         @include flex(column, nowrap, none, center, none);
@@ -23,6 +23,41 @@
                 }
         }
     }
+    .sectionQuinta {
+        div {
+            .izq {
+                width: 44px;
+                height: 44px;
+            }
+            .personValueTwo {
+                width: 11rem;
+                height: 16rem;
+                border-radius: 2rem;
+                overflow: hidden;
+                font-size: 0.8rem;
+                margin: 5px;
+                padding: 5px 5px 5px 5px;
+                @include flex (column, nowrap, none, center,2px);
+                div {
+                    width: 5rem;
+                    height: 5rem;
+                    margin: 2px;
+                    img {
+                        width: 5rem;
+                        height: 5rem;
+                        margin-top: 5px;
+                    }
+                }
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .der{
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
     .sectionSeptima {
         @include flex(column, wrap, center, center, none);
         height: 25rem;
@@ -31,25 +66,29 @@
         padding: 1rem;
         form {
             width: 15rem;
+            height: 15rem;
             @include flex(row, wrap, center, center, 10px);
             input {
-                    width: 10rem;
+                    width: 12rem;
                     font-size: 0.7rem;
                 }
                 div {
                     a {
                         button {
-                            width: 5rem;
+                            width: 6rem;
                             height: 4rem;    
-                            font-size: 0.7rem;
+                            font-size: 1rem;
                         }
                     }
                 }
             }
     }
     .sectionOctava {
+        h1{
+            font-size: 2.5rem;
+        }
         img {
-            width: 20rem;
+            width: 18rem;
             height: 16rem;
         }
     }
@@ -63,7 +102,25 @@
             }
         }
     }
+    .grid{
+        .cardProduct {
+            width: 7rem;
+            height: 10rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            div {
+                height: 7rem;
+            }
+            h3 {
+                padding-top: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
     .sectionTrece {
+        h1{
+            font-size: 2.5rem;
+        }
         img {
             width: 20rem;
             height: 16rem;
@@ -73,6 +130,156 @@
         div {
             .btn13{
                 display:none;
+            }
+        }
+    }
+    .sectionDiecinueve {
+        h1{
+            font-size: 2.5rem;
+        }
+        div {
+            img {
+                width: 18rem;
+                height: 13rem;
+            }
+        }
+    }
+    .sectionVeintiuno{
+        .recomendationContainer {
+            img {
+                width: 16rem;
+                height: 13rem;
+                border-radius: 3rem;
+            }
+            h3 {
+                width: 16rem;
+                font-size: 0.8rem;
+            }
+        }
+        div {
+            .tendenciaContainer {
+                padding: 1rem;
+                div {
+                    h3 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .line2 {
+                    width: 260px;
+                }
+            }
+        }
+    }
+    .sectionVeintiseis {
+        div {
+            h1 {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 2.5rem;
+                width: 18rem;
+                text-align: center;
+            }
+            img {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 11rem;
+                height: 13rem;
+                margin-left: 5rem;
+            }
+            p {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                width: 300px;
+            }
+        }
+    }
+    .sectionVeintisiete {
+        div {
+            h2 {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            p {
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
+        }
+        div {
+            img {
+                width: 18rem;
+                height: 16rem;
+                border-radius: 5rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+    .sectionVeintiocho {
+        padding: 0.5rem;
+        h3 {
+            font-size: 0.8rem;
+        }
+        div {
+            img {
+                width: 18rem;
+                height: 13rem;
+            }
+        }
+    }
+    .sectionVeintinueve {
+        padding: 0.5rem;
+        div {
+            .containerTrabajo {
+                width: 280px;
+            }
+            div {
+                img {
+                    width: 17rem;
+                    height: 10rem;
+                    border-radius: 25rem;
+                }
+            }
+        }
+    }
+    .sectionTreinta {
+        width:290px;   
+        padding: 1rem;
+        margin-left: 1rem;
+        h2 {
+            font-size: 1rem;
+            padding: 0.1rem;
+            margin-top: 1rem;
+        }
+        .datosMensaje {
+            font-size: 1.1rem;
+            form {
+                width: 15rem;
+                height: 45rem;
+                padding: 0rem;
+                .datos {
+                    label {
+                        width: 8rem;
+                        margin: 0.1rem;
+                    }
+                    input {
+                        width: 12rem;
+                        height: 4rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+                .coment {
+                    @include flex(column, nowrap, space-evenly, center, 5px);
+                    label {
+                        width: 8rem;
+                        margin: 0.1rem;
+                    }
+                    input {
+                        width: 12rem;
+                        height: 18rem;
+                        margin: 0.1rem;
+                        font-size: 0.9rem;
+                    }
+                }
             }
         }
     }

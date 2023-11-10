@@ -3,6 +3,7 @@ main {
 }
 .sectionVeintiseis {
     padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     div {
         @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
@@ -10,7 +11,7 @@ main {
         h1 {
             grid-column: 2/3;
             grid-row: 1/2;
-            @include flex (none, none, center, center, none);
+            @include flex (row, wrap, center, center, none);
             color:$color-principal;
             font-size: 4rem;
             font-family: 'Nunito', sans-serif;
@@ -19,14 +20,15 @@ main {
         img {
             grid-column: 1/2;
             grid-row: 1/2;
-            width: 18rem;
-            height: 22rem;
+            width: 24rem;
+            height: 30rem;
             margin-left: 2rem;
-            @include flex (none, wrap, center, center, none)
+            @include flex (none, none, center, center, none);
         }
         p {
             grid-column: 1/3;
             grid-row: 2/3;
+            width: 1000px;
             @include flex (none, none, center, center, none);
             font-size: 1.5rem;
             padding-left: 4rem;
@@ -76,27 +78,28 @@ main {
     }
 }
 .sectionVeintinueve{
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 1rem 1rem 1rem 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     @include flex (row, wrap, space-evenly, center, none);
     div {
-        @include flex (row, none, space-between, center, 50px);
+        @include flex (row, none, space-between, center, 40px);
         width: 100%;
         text-align: center;
-        padding: 2rem;
+        padding: 0.5rem;
         .containerTrabajo {
             width: 600px;
             @include flex (column, nowrap, space-evenly, center, none);
             h2 {
                 font-size: 1.875rem;
-                padding: 2rem 2rem 2rem 2rem;
+                padding: 1rem 1rem 1rem 1rem;
             }
             p {
                 font-size: 1.6rem;
             }
         }
         div {
+            @include flex (none, none, center, center, 4px);
             img {    
                 width: 640px;
                 height: 448px;
@@ -131,35 +134,40 @@ main {
     }
 }
 .sectionTreinta {
-    width:1100px;
-    height: 800px;    
+    width:1000px;   
     padding: 4rem;
+    margin-left: 13rem;
 	border-radius: 2rem;
     background-color: $color-button1;
+    text-align: center;
     @include flex (column, wrap, space-evenly, center, 20px);
-    margin: 4rem;
     h2 {
         font-size: 1.875rem;
         padding: 2rem 2rem 2rem 2rem;
     }
-    div {
+    .datosMensaje {
+        height: auto;
+        @include flex (none, wrap, none, center, 20px);
+        padding: 1rem;
         form {
-            width: 30rem;
-            height: 4rem;
-            padding: 2rem;
+            width: 48rem;
+            height: auto;
+            padding: 3rem;
             border-radius:30px;
             background-color:$color-button1;
-            @include flex(row, nowrap, space-evenly, center, 30px);
+            @include flex(row, nowrap, none, center, 20px);
             .datos {
                 label {
-                    width: 4rem;
+                    width: 8rem;
                     font-weight:bold;
                     padding: 1rem;
+                    margin: 1rem;
                 }
                 input {
                     background-color: $background-color;
                     width: 18rem;
                     height: 4rem;
+                    margin: 1rem;
                     color: $color-secundario;
                     padding: 10px 10px 10px 10px;
                     border: 10px none;
@@ -168,13 +176,16 @@ main {
             }
             .coment {
                 label {
-                    width: 4rem;
+                    width: 8rem;
                     font-weight:bold;
+                    padding: 1rem;
+                    margin:1rem;
                 }
                 input {
                     background-color: $background-color;
                     width: 18rem;
                     height: 20rem;
+                    margin: 1rem;
                     color: $color-secundario;
                     padding: 10px 10px 10px 10px;
                     border: 10px none;
@@ -183,7 +194,7 @@ main {
                 }
             }
         }
-    div {
+    .botonEnviar {
         a {
             button {    
                 background-color: $color-principal;

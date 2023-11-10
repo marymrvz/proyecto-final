@@ -1,9 +1,45 @@
 @import "../../components/card";
 @media(max-width: 550px){
+    .sectionPrimaria{
+        div {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+        div {
+            a{
+                button {
+                    font-size: 1rem;
+                    width: 10rem;
+                    height: 4rem;
+                    margin: 20px;
+                }
+            }
+        }
+        img {
+            margin-top: 4rem;
+            width: 8rem;
+        }
+    }
+    .sectionSecundaria {
+        font-size: 0.8rem;
+        div {
+            a {
+                img {
+                    width: 14rem;
+                }
+            }
+        }
+    }
     .sectionTerciaria {
         @include flex (column, wrap, center, center, none)
-        }
+    }
     .sectionCuarta {
+        margin-top: 2rem;
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
                 .cardHome:nth-child(2) {
                     display: none;
@@ -14,64 +50,72 @@
         }
     }
     .sectionQuinta {
+        margin-top: 3rem;
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+    .sectionSexta {
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
-            img {
-                width: 33px;
-                height: 33px;
+            .blogCard:nth-child(2){
+                display: none}
+        }
+    }
+    footer{
+        margin-top: 1rem;
+        padding: 20px 0px;
+        .containerFooter {
+            width: 100%;
+            @include flex(column, wrap, space-between, center, 0.5rem);
+            padding: 5px;
+            .boxFooter {
+                @include flex(column, wrap, none, none, 0.5rem);
+                h4 {
+                    font-size: 0.9rem;
+                }
+                ul {
+                    @include flex(column, nowrap, none, none, 0.2rem);
+                    li {
+                        a {
+                            font-size: 0.8rem;
+                            font-weight: 100;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
             }
-            .personValueTwo {
-                display: none;
-            }
-            .personValue {
-                display: block;
-                width: 12rem;
-                height: 18rem;
-                border-radius: 2rem;
-                overflow: hidden;
-                background-color: $color-terciario;
-                text-align: center;
-                font-size: 1.2rem;
-                margin: 15px;
-                padding: 10px 10px 10px 10px;
-                box-shadow: .0625rem .0625rem .625rem $color-secundario;
-                div {
-                    width: 6rem;
-                    height: 6rem;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin: 10px;
-                    text-align: center;
-                    img {
-                        width: 6rem;
-                        height: 6rem;
-                        border-radius: 50%;
-                        object-fit: cover;
-                        text-align: center;
+            .boxIcon {
+                @include flex(column, nowrap, space-evenly, center, 10px);
+                transition: all .5s ease;
+                .iconFooter {
+                    a{
+                        img {
+                            width: 33px;
+                            height: 33px;
+                        }
                     }
                 }
             }
         }
-    }
-    .sectionSexta {
-        div {
-            .blogCard {
-                width: 12.5rem;
-                height: 15rem;
-                font-size: 0.8rem;
-                margin: 0.5rem;
-                text-align: center;
-                div {
-                    width: 100%;
-                    height: 11rem;
+        .boxAviso {
+            @include flex (column, wrap, space-evenly, center, 5px);
+            margin-top: 1rem;
+            padding-bottom: 3rem;
+            text-decoration: none;
+            li {
+                a {
+                    font-size: 0.8rem;
                 }
-                h3 {
-                    padding: 0.5rem;
-                }
-            }
-            .blogCard:nth-child(2){
-                display: none}
             }
         }
+    }
     .sectionOctava {
         img {
             width: 20rem;
@@ -97,25 +141,32 @@
     .grid {
         @include grid ((1fr, 1fr),(6, auto), 10px);
         .cardProduct {
-            width: 9rem;
-            height: 15rem;
+            width: 8.5rem;
+            height: 14rem;
             border-radius: 2rem;
             overflow: hidden;
-            background-color: $color-terciario;
-            text-align: center;
             div {
                 width: 100%;
-                height: 11rem;
+                height: 10rem;
                 object-fit: cover;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            }
+            h3 {
+                padding-top: 0.8rem;
+                font-size: 0.8rem;
             }
         }
         .grid-sectionDiez{
             display: none;
+        }
+    }
+    .masProduct{
+        a{
+            button {
+                font-size: 1rem;
+                width: 10rem;
+                height: 4rem;
+                margin: 20px;
+            }
         }
     }
     .sectionTrece {
@@ -155,163 +206,200 @@
             display: none;
         }
     }
-    .sectionVeinte{
+    .sectionDiecinueve {
         div {
-            .blogCard:nth-child(3){
+            img {
+                width: 20rem;
+                height: 18rem;
+            }
+        }
+    }
+    .sectionVeinte{
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        h2 {            
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+        div {
+            .blogCard:nth-child(2){
                 display: none;
             }
         }
     }
+    .sectionVeintiuno{
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
+        .recomendationContainer {
+            img {
+                width: 22rem;
+                height: 15rem;
+                border-radius: 3rem;
+            }
+            h3 {
+                width: 20rem;
+                font-size: 1rem;
+            }
+        }
+        div {
+            .tendenciaContainer {
+                padding: 1rem;
+                div {
+                    h3 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .line2 {
+                    width: 350px;
+                }
+            }
+        }
+    }
     .sectionVeintidos {
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
             .cardIg {
                 width: 14rem;
                 height: 14rem;
             }
-            .cardIg:nth-child(3){
+            .cardIg:nth-child(2){
                 display: none;
             }
         }
     }
     .sectionVeintitres {
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
-            div {
-                .blogCard {
-                    width: 14rem;
-                    height: 16rem;
-                    div {
-                        width: 100%;
-                        height: 12rem;
-                        object-fit: cover;
-                    }
-                }
-                .blogCard:nth-child(3) {
-                    display: none;
+            .blogCard:nth-child(2){
+                display: none;
+            }
+            .masContainer {
+                h4 {
+                    font-size: 0.9rem;
                 }
             }
         }
     }
     .sectionVeinticuatro {
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
-            div {
-                .blogCard {
-                    width: 14rem;
-                    height: 16rem;
-                    div {
-                        width: 100%;
-                        height: 12rem;
-                        object-fit: cover;
-                    }
-                }
-                .blogCard:nth-child(3) {
-                    display: none;
-                }
+            .blogCard:nth-child(2){
+                display: none;
             }
         }
     }
     .sectionVeinticinco {
+        padding: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        h2 {
+            font-size: 1.2rem;
+            padding: 1rem 1rem 1rem 1rem;
+        }
         div {
-            div {
-                .blogCard {
-                    width: 14rem;
-                    height: 16rem;
-                    div {
-                        width: 100%;
-                        height: 12rem;
-                        object-fit: cover;
-                    }
-                }
-                .blogCard:nth-child(3) {
-                    display: none;
-                }
-            }
+            .blogCard:nth-child(2){
+                display: none;
+            } 
         }
     }
-    .sectionVeintiSeis {
-        padding: 1rem;
-        font-size: 2rem;
+    .sectionVeintiseis {
         div {
-            @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
-            img {
-                width: 15rem;
-                height: 22rem;
-            }
             h1 {
-                font-size: 3rem;
-                padding: 1rem;
+                font-size: 2.5rem;
+                width: 8rem;
+            }
+            img {
+                width: 10rem;
+                height: 11.5rem;
+                margin-left: 0.5rem;
+            }
+            p {
+                width: 320px;
             }
         }
     }
     .sectionVeintisiete {
         @include flex (column, none, space-between, center, none);
         div {
+            h2 {
+                font-size: 1.3rem;
+                padding: 1rem;
+            }
+            p {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+        div {
             img {
-                width: 28rem;
-                height: 22rem;
-                padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                width: 22rem;
+                height: 18rem;
+                border-radius: 5rem;
+                padding: 1rem 1rem 1rem 1rem;
             }
         }
     }
     .sectionVeintiocho {
-        padding: 3rem 3rem 3rem 3rem;
-        div {
-            img {
-                width: 35rem;
-                height: 18rem;
-            }
-        }
-    }
-    .sectionVeintinueve {
         padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         div {
-            @include flex (column, wrap, space-evenly, center, none);
-            div {
-                img {
-                    width: 28rem;
-                    height: 18rem;
-                    border-radius: 30rem;
-                }
+            img {
+                width: 22rem;
+                height: 14rem;
             }
         }
     }
-    .sectionTreinta {
-        width: 540px;
-        @include flex (column, none, center, start, none);
-        h2 {
-            font-size: 1.875rem;
-            padding: 2rem 2rem 2rem 2rem;
-        }
+    .sectionVeintinueve{
         div {
-            form {
-                width: 20rem;
-                .datos {
-                    label {
-                        width: 3rem;
-                    }
-                    input {
-                        width: 15rem;
-                        font-size: 1rem;
-                    }
-                }
-                .coment {
-                    label {
-                        width: 4rem;
-                    }
-                    input {
-                        width: 15rem;
-                        height: 18rem;
-                        font-size: 1rem;
+            a {
+                button {
+                    font-size: 1rem;
+                    width: 10rem;
+                    height: 4rem;
+                    margin: 20px;
                     }
                 }
             }
         }
-        div {
+    .sectionTreinta {
+        width: 380px;
+        margin-left: 2rem;
+        .datos {
+            label {
+                font-size: 0.8rem;
+            }
+            input {
+                font-size: 0.8rem;
+            }
+        }
+        .coment {
+            label {
+                font-size: 0.8rem;
+            }
+            input {
+                font-size: 0.8rem;
+            }
+        }
+        .botonEnviar {
             a {
                 button {    
-                    width: 12rem;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                    font-size: 1rem;
+                    width: 10rem;
+                    height: 4rem;
+                    margin: 20px;
                 }
             }
         }

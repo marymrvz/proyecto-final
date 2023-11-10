@@ -35,6 +35,12 @@
     margin: 20px;
     padding: 30px 30px 30px 30px;
     box-shadow: .0625rem .0625rem .625rem $color-secundario;
+    @include flex (column, nowrap, none, center,2px);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
     div {
         width: 8rem;
         height: 8rem;
@@ -59,9 +65,15 @@
     background-color:$color-terciario;
     text-align: center;
     font-size: 1.1rem;
-    margin: 20px;
+    margin: 10px;
     padding: 15px 15px 15px 15px;
     box-shadow: .0625rem .0625rem .625rem $color-secundario;
+    @include flex (column, nowrap, none, center,2px);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
     div {
         width: 7.5rem;
         height: 7.5rem;
@@ -106,11 +118,12 @@
     }
     h3 {
         padding: 0.5rem;
+        color: $color-principal;
     }
 }
 .cardProduct {
     width: 13.25rem;
-    height: 20rem;
+    height: 19rem;
     border-radius: 2rem;
     overflow: hidden;
     background-color: $color-terciario;
@@ -125,10 +138,14 @@
             object-fit: cover;
         }
     }
+    h3 {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
 }
 .cardDestacadoMaq{
     width: 13.25rem;
-    height: 20rem;
+    height: 19rem;
     text-align: center;
     div {
         width: 100%;
@@ -166,8 +183,13 @@
 }
 .cardDestacadoSkin {
     width: 28rem;
-    height: 20rem;
+    height: 19rem;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
     div {
         width: 100%;
         height: 100%;
@@ -185,6 +207,7 @@
     width: 21rem;
     height: 21rem;
     text-align: center;
+    overflow: hidden;
     div {
         width: 100%;
         height: 100%;
@@ -195,6 +218,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 1s;
+            &:hover{
+                transform: scale(1.3);
+            }
         }
     }
 }

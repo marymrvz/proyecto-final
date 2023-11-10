@@ -12,6 +12,7 @@
     }
 }
 .sectionNovena{
+    width: 100%;
     @include flex (column, wrap, none, center, none);
     padding: 4rem 4rem 4rem 4rem;
     div{
@@ -117,6 +118,7 @@
     }
 }
 .masProduct{
+    width: 100%;
     text-align: center;
     a{
         button {

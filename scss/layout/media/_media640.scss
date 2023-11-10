@@ -20,17 +20,32 @@
             }
         }
     }
+    .sectionQuinta {
+        div{
+            .izq{
+                width: 44px;
+                height: 44px;
+            }
+            .personValueTwo:nth-child(2){
+                display: none;
+            }
+            .der{
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
     .sectionSexta {
         div {
             .blogCard {
-                width: 14rem;
-                height: 16rem;
+                width: 13rem;
+                height: 15rem;
                 font-size: 0.8rem;
                 margin: 0.5rem;
                 text-align: center;
                 div {
                     width: 100%;
-                    height: 12rem;
+                    height: 11rem;
                 }
                 h3 {
                     padding: 0.5rem;
@@ -47,24 +62,37 @@
             }
         }
     }
+    .sectionNovena {
+        div {
+            .btn5{
+                display:none;
+            }
+            .btn10{
+                display:none;
+            }
+        }
+    }
     .grid {
         @include grid ((1fr, 1fr),(6, auto), 15px);
         .cardProduct {
             width: 11.25rem;
-            height: 18rem;
+            height: 16.5rem;
             border-radius: 2rem;
             overflow: hidden;
             background-color: $color-terciario;
             text-align: center;
             div {
                 width: 100%;
-                height: 11.25rem;
+                height: 12rem;
                 object-fit: cover;
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
+            }
+            h3 {
+                font-size: 1rem;
             }
         }
         .cardDestacadoMaq{
@@ -138,18 +166,75 @@
             }
         }
     }
-    .sectionVeinte{
+    .sectionDiecinueve {
+        h1{
+            font-size: 3rem;
+        }
         div {
+            img {
+                width: 30rem;
+                height: 26rem;
+            }
+        }
+    }
+    .sectionVeinte {
+        div {
+            .blogCard {
+                width: 13rem;
+                height: 15rem;
+                font-size: 0.8rem;
+                margin: 0.5rem;
+                text-align: center;
+                div {
+                    width: 100%;
+                    height: 11rem;
+                }
+                h3 {
+                    padding: 0.5rem;
+                }
+            }
             .blogCard:nth-child(3){
-                display: none;
+                display: none}
+            }
+        }
+    .sectionVeintiuno{
+        width: 100%;
+        @include flex (row, wrap, space-evenly, center, 20px);
+        padding: 1rem;
+        .recomendationContainer {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            @include flex (column, none, center, none, none);
+            @include subtitle;
+            img {
+                width: 25rem;
+                height: 15rem;
+                border-radius: 3rem;
+            }
+            h3 {
+                width: 25rem;
+                font-size: 1.2rem;
+            }
+        }
+        div {
+            .tendenciaContainer {
+                padding: 1rem;
+                div {
+                    h3 {
+                        font-size: 0.8rem;
+                    }
+                }
+                .line2 {
+                    width: 350px;
+                }
             }
         }
     }
     .sectionVeintidos {
         div {
             .cardIg {
-                width: 14rem;
-                height: 14rem;
+                width: 13rem;
+                height: 13rem;
             }
             .cardIg:nth-child(3){
                 display: none;
@@ -160,11 +245,11 @@
         div {
             div {
                 .blogCard {
-                    width: 14rem;
-                    height: 16rem;
+                    width: 13rem;
+                    height: 15rem;
                     div {
                         width: 100%;
-                        height: 12rem;
+                        height: 11rem;
                         object-fit: cover;
                     }
                 }
@@ -178,11 +263,11 @@
         div {
             div {
                 .blogCard {
-                    width: 14rem;
-                    height: 16rem;
+                    width: 13rem;
+                    height: 15rem;
                     div {
                         width: 100%;
-                        height: 12rem;
+                        height: 11rem;
                         object-fit: cover;
                     }
                 }
@@ -196,11 +281,11 @@
         div {
             div {
                 .blogCard {
-                    width: 14rem;
-                    height: 16rem;
+                    width: 13rem;
+                    height: 15rem;
                     div {
                         width: 100%;
-                        height: 12rem;
+                        height: 11rem;
                         object-fit: cover;
                     }
                 }
@@ -210,18 +295,24 @@
             }
         }
     }
-    .sectionVeintiSeis {
-        padding: 1rem;
-        font-size: 2rem;
+    .sectionVeintiseis {
         div {
-            @include grid ((1fr, 1fr,), repeat(2, auto), 10px);
-            img {
-                width: 15rem;
-                height: 22rem;
-            }
             h1 {
                 font-size: 3rem;
-                padding: 1rem;
+                padding: 0.3rem;
+                width: 12rem;
+            }
+            img {
+                width: 15rem;
+                height: 17rem;
+                margin-left: 1rem;
+            }
+            p {
+                width: 480px;
+                @include flex (none, none, center, center, none);
+                font-size: 1rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
         }
     }
@@ -235,68 +326,19 @@
             }
         }
     }
-    .sectionVeintiocho {
-        padding: 3rem 3rem 3rem 3rem;
-        div {
-            img {
-                width: 35rem;
-                height: 18rem;
-            }
-        }
-    }
     .sectionVeintinueve {
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        padding: 1rem 1rem 1rem 1rem;
         div {
-            @include flex (column, wrap, space-evenly, center, none);
             div {
                 img {
-                    width: 28rem;
-                    height: 18rem;
+                    width: 23rem;
+                    height: 13rem;
                     border-radius: 30rem;
                 }
             }
         }
     }
     .sectionTreinta {
-        width: 540px;
-        @include flex (column, none, center, start, none);
-        h2 {
-            font-size: 1.875rem;
-            padding: 2rem 2rem 2rem 2rem;
-        }
-        div {
-            form {
-                width: 20rem;
-                .datos {
-                    label {
-                        width: 3rem;
-                    }
-                    input {
-                        width: 15rem;
-                        font-size: 1rem;
-                    }
-                }
-                .coment {
-                    label {
-                        width: 4rem;
-                    }
-                    input {
-                        width: 15rem;
-                        height: 18rem;
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-        div {
-            a {
-                button {    
-                    width: 12rem;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
+        margin-left: 4rem;
     }
 }

@@ -45,20 +45,26 @@
             height: 24rem;
             border-radius: 3rem;
             text-align: center;
+            @include flex (none, none, center, none, none);
         }
         h3 {
+            width: 34rem;
             padding-top: 1rem;
             font-size: 1.4rem;
             text-align: center;
+            color: $color-secundario;
         }
     }
     div {
         .tendenciaContainer {
-            @include flex(column, none, center, flex-end, none);
+            @include flex(column, none, center, space-evenly, none);
+            padding: 1rem;
             div {
-                @include flex(row, none, flex-end, center, none);
-                h3 {
-                    margin-right: 16rem;
+                @include flex(row, none, space-between, center, none);
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover{
+                    transform: scale(0.9);
                 }
             }
         }
@@ -88,8 +94,14 @@
             @include flex (row, nowrap, space-evenly, center, none);
         }
         .masContainer {
+            font-size: 1.3rem;
             @include flex (none, none, flex-end, center, none);
-            margin: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.1s;
+            &:hover{
+                transform: scale(1.02);
+            }
         }
     }
 }
