@@ -128,9 +128,28 @@
     }
     .sectionQuince {
         div {
+            .cardTrend {
+                width: 14rem;
+                height: 14rem;
+                padding: 2rem;
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
             .cardTrend:nth-child(3) {
                 display: none;
             }
+        }
+    }
+    .gridSkin {
+        @include grid ((1fr, 1fr), (7, auto), 15px);
+        justify-content: center;
+        padding: 0.5rem;
+        .cardDestacadoSkin {
+            width: 27rem;
+        }
+        .grid-sectionDiecisiete{
+            display: none;
         }
     }
     .sectionVeinte{

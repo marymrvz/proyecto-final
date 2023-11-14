@@ -1,0 +1,9 @@
+.error {
+    background-color: $background-color;
+    @include flex (none, none, center, center, none);
+    img {
+        width: 80vw;
+        height: 90vh;
+        padding: 2rem;
+    }
+}

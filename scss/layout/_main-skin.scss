@@ -2,7 +2,7 @@
     text-align: center;
     width: 100%;
     background-color:$color-button1;
-    @include flex(row, wrap, center, center, 30px);
+    @include flex(row, wrap, center, center, 20px);
     h1 {
         @include titlehead;
     }

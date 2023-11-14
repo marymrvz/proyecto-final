@@ -117,6 +117,9 @@
         }
     }
     .sectionOctava {
+        h1 {
+            padding: 1.5rem;
+        }
         img {
             width: 20rem;
             height: 15rem;
@@ -153,6 +156,7 @@
             h3 {
                 padding-top: 0.8rem;
                 font-size: 0.8rem;
+                font-weight: 150;
             }
         }
         .grid-sectionDiez{
@@ -170,6 +174,9 @@
         }
     }
     .sectionTrece {
+        h1 {
+            padding: 1.5rem;
+        }
         img {
             width: 20rem;
             height: 15rem;
@@ -185,25 +192,30 @@
     .gridSkin {
         @include grid ((1fr, 1fr),(6, auto), 10px);
         .cardProduct {
-            width: 9rem;
-            height: 15rem;
+            width: 8.5rem;
+            height: 14rem;
             border-radius: 2rem;
             overflow: hidden;
             background-color: $color-terciario;
             text-align: center;
             div {
                 width: 100%;
-                height: 11rem;
+                height: 10rem;
                 object-fit: cover;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+            }
+            h3 {
+                padding-top: 0.8rem;
+                font-size: 0.8rem;
+                font-weight: 150;
             }
         }
         .grid-sectionDieciseis{
             display: none;
+        }
+        .cardDestacadoSkin{
+            width: 17.5rem;
+            height: 14rem;
+            text-align: center;
         }
     }
     .sectionDiecinueve {
@@ -263,10 +275,6 @@
             padding: 1rem 1rem 1rem 1rem;
         }
         div {
-            .cardIg {
-                width: 14rem;
-                height: 14rem;
-            }
             .cardIg:nth-child(2){
                 display: none;
             }
@@ -402,6 +410,11 @@
                     margin: 20px;
                 }
             }
+        }
+    }
+    .error {
+        img {
+            padding: 2rem;
         }
     }
 }

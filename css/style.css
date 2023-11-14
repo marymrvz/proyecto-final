@@ -91,14 +91,14 @@ header nav .navBarContainer .hamburguerMenu .line {
   border-radius: 10px;
   background: #E5B8C1;
 }
-header nav .navBarContainer .lineOne {
+header nav .navBarContainer .hamburguerMenu .lineOne {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-header nav .navBarContainer .lineTwo {
+header nav .navBarContainer .hamburguerMenu .lineTwo {
   transition: transform 0.2s ease-in-out;
 }
-header nav .navBarContainer .lineThree {
+header nav .navBarContainer .hamburguerMenu .lineThree {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
@@ -606,7 +606,7 @@ footer .boxAviso li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .sectionOctava h1 {
   text-decoration: none;
@@ -773,7 +773,7 @@ footer .boxAviso li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .sectionTrece h1 {
   text-decoration: none;
@@ -1435,6 +1435,21 @@ main {
   transform: scale(1.1);
 }
 
+.error {
+  background-color: #F7F0F1;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+.error img {
+  width: 80vw;
+  height: 90vh;
+  padding: 2rem;
+}
+
 .cardHome {
   width: 21.875rem;
   height: 21.875rem;
@@ -1456,7 +1471,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1579,6 +1597,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -1592,13 +1617,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -1629,6 +1659,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -1766,13 +1800,16 @@ main {
   .grid .item--12 {
     display: none;
   }
+  .sectionQuince {
+    padding: 3rem;
+  }
   .sectionQuince div .cardTrend {
-    width: 19rem;
-    height: 19rem;
+    width: 18rem;
+    height: 18rem;
     padding: 2rem;
   }
   .sectionQuince div .cardTrend h2 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
   .gridSkin {
     display: grid;
@@ -1990,7 +2027,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2113,6 +2153,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -2126,13 +2173,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -2163,6 +2215,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -2308,6 +2364,14 @@ main {
     margin: 8px;
     border-radius: 10px;
   }
+  .sectionQuince div .cardTrend {
+    width: 15rem;
+    height: 15rem;
+    padding: 2rem;
+  }
+  .sectionQuince div .cardTrend h2 {
+    font-size: 1.5rem;
+  }
   .gridSkin {
     display: grid;
     grid-template-columns: 1fr, 1fr;
@@ -2317,81 +2381,7 @@ main {
     padding: 0.5rem;
   }
   .gridSkin .cardDestacadoSkin {
-    width: 27rem;
-  }
-  .gridSkin .grid-sectionDieciseis {
-    grid-column: 1/6;
-    grid-row: 1/1;
-  }
-  .gridSkin .grid-sectionDiecisiete {
-    display: none;
-  }
-  .gridSkin .item-1 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .gridSkin .item-2 {
-    display: none;
-  }
-  .gridSkin .item-3 {
-    grid-column: 3/5;
-    grid-row: 2/3;
-  }
-  .gridSkin .item-4 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .gridSkin .item-5 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-  }
-  .gridSkin .item-6 {
-    grid-column: 4/5;
-    grid-row: 3/4;
-  }
-  .gridSkin .item-7 {
-    display: none;
-  }
-  .gridSkin .item-8 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-  .gridSkin .item-9 {
-    grid-column: 3/4;
-    grid-row: 4/5;
-  }
-  .gridSkin .item-10 {
-    grid-column: 4/5;
-    grid-row: 4/5;
-  }
-  .gridSkin .item-11 {
-    display: none;
-  }
-  .gridSkin .item-12 {
-    grid-column: 2/3;
-    grid-row: 5/6;
-  }
-  .gridSkin .item-13 {
-    grid-column: 3/4;
-    grid-row: 5/6;
-  }
-  .gridSkin .item-14 {
-    grid-column: 4/5;
-    grid-row: 5/6;
-  }
-  .gridSkin .item-15 {
-    display: none;
-  }
-  .gridSkin .item-16 {
-    grid-column: 2/4;
-    grid-row: 6/7;
-  }
-  .gridSkin .item-17 {
-    grid-column: 3/5;
-    grid-row: 6/7;
-  }
-  .gridSkin .item-18 {
-    display: none;
+    width: 27.5rem;
   }
   .sectionDiecinueve div h1 {
     text-align: center;
@@ -2515,7 +2505,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2638,6 +2631,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -2651,13 +2651,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -2688,6 +2693,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -2862,7 +2871,29 @@ main {
   .grid .item--12 {
     display: none;
   }
+  .sectionQuince div .cardTrend {
+    width: 14rem;
+    height: 14rem;
+    padding: 2rem;
+  }
+  .sectionQuince div .cardTrend h2 {
+    font-size: 1.2rem;
+  }
   .sectionQuince div .cardTrend:nth-child(3) {
+    display: none;
+  }
+  .gridSkin {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 7, auto;
+    gap: 15px;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  .gridSkin .cardDestacadoSkin {
+    width: 27rem;
+  }
+  .gridSkin .grid-sectionDiecisiete {
     display: none;
   }
   .sectionVeinte div .blogCard {
@@ -3090,7 +3121,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3213,6 +3247,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -3226,13 +3267,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -3263,6 +3309,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -3627,7 +3677,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -3750,6 +3803,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -3763,13 +3823,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -3800,6 +3865,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -3994,8 +4063,42 @@ main {
   .sectionCatorce div .btn15 {
     display: none;
   }
+  .sectionQuince {
+    padding: 1.5rem;
+  }
+  .sectionQuince h1 {
+    font-size: 1.3rem;
+  }
+  .sectionQuince div .cardTrend {
+    width: 12;
+    height: 12;
+    padding: 1rem;
+  }
+  .sectionQuince div .cardTrend h2 {
+    font-size: 1rem;
+  }
   .sectionQuince div .cardTrend:nth-child(2) {
     display: none;
+  }
+  .gridSkin {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 6, auto;
+    gap: 15px;
+  }
+  .gridSkin .cardProduct {
+    width: 11.25rem;
+    height: 16.5rem;
+  }
+  .gridSkin .cardProduct div {
+    width: 100%;
+    height: 12rem;
+  }
+  .gridSkin .cardProduct h3 {
+    font-size: 1rem;
+  }
+  .gridSkin .cardDestacadoSkin {
+    width: 23.2rem;
   }
   .sectionDiecinueve h1 {
     font-size: 3rem;
@@ -4175,7 +4278,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4298,6 +4404,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -4311,13 +4424,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -4348,6 +4466,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -4524,6 +4646,9 @@ main {
   footer .boxAviso li a {
     font-size: 0.8rem;
   }
+  .sectionOctava h1 {
+    padding: 1.5rem;
+  }
   .sectionOctava img {
     width: 20rem;
     height: 15rem;
@@ -4560,6 +4685,7 @@ main {
   .grid .cardProduct h3 {
     padding-top: 0.8rem;
     font-size: 0.8rem;
+    font-weight: 150;
   }
   .grid .grid-sectionDiez {
     display: none;
@@ -4569,6 +4695,9 @@ main {
     width: 10rem;
     height: 4rem;
     margin: 20px;
+  }
+  .sectionTrece h1 {
+    padding: 1.5rem;
   }
   .sectionTrece img {
     width: 20rem;
@@ -4584,8 +4713,8 @@ main {
     gap: 10px;
   }
   .gridSkin .cardProduct {
-    width: 9rem;
-    height: 15rem;
+    width: 8.5rem;
+    height: 14rem;
     border-radius: 2rem;
     overflow: hidden;
     background-color: #f8d3da;
@@ -4593,16 +4722,21 @@ main {
   }
   .gridSkin .cardProduct div {
     width: 100%;
-    height: 11rem;
+    height: 10rem;
     object-fit: cover;
   }
-  .gridSkin .cardProduct div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .gridSkin .cardProduct h3 {
+    padding-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 150;
   }
   .gridSkin .grid-sectionDieciseis {
     display: none;
+  }
+  .gridSkin .cardDestacadoSkin {
+    width: 17.5rem;
+    height: 14rem;
+    text-align: center;
   }
   .sectionDiecinueve div img {
     width: 20rem;
@@ -4644,10 +4778,6 @@ main {
   .sectionVeintidos h2 {
     font-size: 1.2rem;
     padding: 1rem 1rem 1rem 1rem;
-  }
-  .sectionVeintidos div .cardIg {
-    width: 14rem;
-    height: 14rem;
   }
   .sectionVeintidos div .cardIg:nth-child(2) {
     display: none;
@@ -4757,6 +4887,9 @@ main {
     height: 4rem;
     margin: 20px;
   }
+  .error img {
+    padding: 2rem;
+  }
 }
 .cardHome {
   width: 21.875rem;
@@ -4779,7 +4912,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4902,6 +5038,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -4915,13 +5058,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -4952,6 +5100,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -5114,19 +5266,6 @@ main {
   .sectionNovena div .btn8 {
     display: none;
   }
-  .grid .cardProduct {
-    width: 7rem;
-    height: 10rem;
-    border-radius: 2rem;
-    overflow: hidden;
-  }
-  .grid .cardProduct div {
-    height: 7rem;
-  }
-  .grid .cardProduct h3 {
-    padding-top: 0.5rem;
-    font-size: 0.8rem;
-  }
   .sectionTrece h1 {
     font-size: 2.5rem;
   }
@@ -5136,6 +5275,12 @@ main {
   }
   .sectionCatorce div .btn13 {
     display: none;
+  }
+  .sectionQuince {
+    padding: 0.5rem;
+  }
+  .sectionQuince h1 {
+    padding: 1rem;
   }
   .sectionDiecinueve h1 {
     font-size: 2.5rem;
@@ -5262,6 +5407,9 @@ main {
     margin: 0.1rem;
     font-size: 0.9rem;
   }
+  .error img {
+    padding: 0.5rem;
+  }
 }
 .cardHome {
   width: 21.875rem;
@@ -5284,7 +5432,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -5407,6 +5558,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -5420,13 +5578,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -5457,6 +5620,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
@@ -5513,6 +5680,9 @@ main {
   body {
     font-size: 0.8rem;
   }
+  .sectionCatorce {
+    padding: 1rem;
+  }
   .sectionDiecinueve h1 {
     font-size: 2.5rem;
   }
@@ -5564,7 +5734,10 @@ main {
   object-fit: cover;
   box-shadow: 0.0625rem 0.0625rem 0.625rem #c1c0c0;
 }
-.cardHome div img {
+.cardHome div a {
+  object-fit: fill;
+}
+.cardHome div a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -5687,6 +5860,13 @@ main {
   overflow: hidden;
   background-color: #f8d3da;
   text-align: center;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.cardProduct:hover {
+  opacity: 3;
+  filter: contrast(120%);
+  background-color: #7B9E89;
 }
 .cardProduct div {
   width: 100%;
@@ -5700,13 +5880,18 @@ main {
 }
 .cardProduct h3 {
   padding-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .cardDestacadoMaq {
   width: 13.25rem;
   height: 19rem;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cardDestacadoMaq:hover {
+  transform: scale(1.1);
 }
 .cardDestacadoMaq div {
   width: 100%;
@@ -5737,6 +5922,10 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s;
+}
+.cardTrend div img:hover {
+  transform: scale(1.2);
 }
 .cardTrend div h2 {
   padding: 0.5rem;
