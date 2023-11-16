@@ -9,6 +9,14 @@
             @include flex(row, nowrap, space-between, center, none);
             .navBarContainer {
                 width: 80px;
+                .hamburgerMenu{
+                    top: 15px;
+                    left: 15px;
+                    height: 22px;
+                }
+                .line {
+                    width: 28px;
+                }
             }
             .logo {
                 display: none;
@@ -276,7 +284,9 @@
     }
     .error {
         img {
+            width: 98vw;
             padding: 0.5rem;
+            margin-left: 0.5rem;
         }
     }
 }

@@ -1,0 +1,211 @@
+.animation{
+    width: 200%;
+    left: 0;
+    bottom: 0px;
+    position: fixed;
+    height: 100px;
+    overflow: hidden;
+    .wave {
+        .wave1{
+            position: absolute;
+            background: url("../assets/img/wave.svg");
+            z-index: 10;
+            opacity: 2;
+            width: 5000px;
+            height: 90px;
+            animation-delay: 0s;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            animation: animate1 30s linear infinite;
+            bottom: 0;
+        }
+        .wave2{
+            position: absolute;
+            background: url("../assets/img/wave.svg");
+            animation: animate2 15s linear infinite;
+            z-index: 9;
+            opacity: 0.7;
+            width: 3000px;
+            height: 95px;
+            animation-delay: -5s;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            bottom: 5px;
+        }
+        .wave3{
+            position: absolute;
+            background: url("../assets/img/wave.svg");
+            animation: animate3 20s linear infinite;
+            z-index: 8;
+            opacity: 0.5;
+            width: 3000px;
+            height: 100px;
+            animation-delay: -3s;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            bottom: 10px;
+        }
+        .wave4{
+            position: absolute;
+            background: url("../assets/img/wave.svg");
+            animation: animate4 25s linear infinite;
+            z-index: 7;
+            opacity: 0.3;
+            width: 3000px;
+            height: 105px;
+            animation-delay: 2s;
+            background-repeat: repeat no-repeat;
+            background-position: 0 bottom;
+            bottom: 15px;
+        }
+    }
+}
+@keyframes animate1{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 2000px;
+    }
+}
+@keyframes animate2{
+    0% {
+        background-position-x: 2000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+@keyframes animate3{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 2000px;
+    }
+}
+@keyframes animate4{
+    0% {
+        background-position-x: 2000px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+/*
+@keyframes animate2{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-40%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-5%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-25%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-40%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-80%) translateZ(0) scaleY(1);
+    }
+}
+/*
+
+
+@keyframes animate2{
+    0% {
+        transform: translateX(-5%) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-45%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-18%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-36%) translateZ(0) scaleY(1);
+    }
+}
+
+/*
+@keyframes animate2{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+/*
+.wave1{
+    position: absolute;
+    left: 0;
+    width: 200%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+}
+*/

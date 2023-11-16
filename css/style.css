@@ -43,7 +43,8 @@ header {
   z-index: 4;
   box-shadow: 10px 10px 10px rgba(88, 88, 88, 0.564);
 }
-header nav {
+
+nav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -53,12 +54,12 @@ header nav {
   gap: 0px;
   list-style: none;
 }
-header nav .navBarContainer {
+nav .navBarContainer {
   display: block;
   position: relative;
   height: 60px;
 }
-header nav .navBarContainer .checkBox {
+nav .navBarContainer .checkBox {
   position: absolute;
   display: block;
   height: 40px;
@@ -69,13 +70,13 @@ header nav .navBarContainer .checkBox {
   opacity: 0;
   cursor: pointer;
 }
-header nav .navBarContainer .hamburguerMenu {
+nav .navBarContainer .hamburgerMenu {
   display: block;
-  height: 26px;
+  height: 32px;
   width: 32px;
   position: absolute;
-  top: 17px;
-  left: 20px;
+  top: 18px;
+  left: 18px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -84,25 +85,25 @@ header nav .navBarContainer .hamburguerMenu {
   align-items: center;
   gap: 2px;
 }
-header nav .navBarContainer .hamburguerMenu .line {
+nav .navBarContainer .line {
   display: block;
   height: 4px;
-  width: 100%;
+  width: 40px;
   border-radius: 10px;
   background: #E5B8C1;
 }
-header nav .navBarContainer .hamburguerMenu .lineOne {
+nav .navBarContainer .lineOne {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-header nav .navBarContainer .hamburguerMenu .lineTwo {
+nav .navBarContainer .lineTwo {
   transition: transform 0.2s ease-in-out;
 }
-header nav .navBarContainer .hamburguerMenu .lineThree {
+nav .navBarContainer .lineThree {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-header nav .navBarContainer .menuItems {
+nav .navBarContainer .menuItems {
   background-color: rgba(255, 255, 255, 0.7137254902);
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.841);
@@ -120,11 +121,11 @@ header nav .navBarContainer .menuItems {
   transition: transform 0.5s ease-in-out;
   text-align: end;
 }
-header nav .navBarContainer .menuItems li {
+nav .navBarContainer .menuItems li {
   margin-bottom: 1.2rem;
   list-style: none;
 }
-header nav .navBarContainer .menuItems li a {
+nav .navBarContainer .menuItems li a {
   text-decoration: none;
   color: #65071A;
   font-weight: 500;
@@ -132,28 +133,28 @@ header nav .navBarContainer .menuItems li a {
   padding: 1rem;
   width: 30rem;
 }
-header nav .navBarContainer .menuItems li a:hover {
+nav .navBarContainer .menuItems li a:hover {
   font-weight: bolder;
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .menuItems {
+nav .navBarContainer input[type=checkBox]:checked ~ .menuItems {
   transform: translateX(0);
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineOne {
+nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineOne {
   transform: rotate(45deg);
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineTwo {
+nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineTwo {
   transform: scaleY(0);
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineThree {
+nav .navBarContainer input[type=checkBox]:checked ~ .hamburgerMenu .lineThree {
   transform: rotate(-45deg);
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .logo {
+nav .navBarContainer input[type=checkBox]:checked ~ .logo {
   display: none;
 }
-header nav .navBarContainer input[type=checkBox]:checked ~ .iconNavBar {
+nav .navBarContainer input[type=checkBox]:checked ~ .iconNavBar {
   display: none;
 }
-header nav .iconNavBar {
+nav .iconNavBar {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -161,17 +162,19 @@ header nav .iconNavBar {
   align-items: center;
   gap: 0.8rem;
 }
-header nav .iconNavBar a img {
+nav .iconNavBar a img {
   width: 55px;
   height: 55px;
   cursor: pointer;
   transition: all 0.3s;
 }
-header nav .iconNavBar a img:hover {
+nav .iconNavBar a img:hover {
   transform: scale(1.1);
 }
 
 /*
+
+
 .navBar{
     width: 100%;
     @include flex (row, wrap, space-between, center, none);
@@ -284,7 +287,7 @@ header nav .iconNavBar a img:hover {
 footer {
   width: 100%;
   margin-top: 4rem;
-  padding: 80px 0px;
+  padding: 60px 0px;
   background-color: #0C1713;
   text-decoration: none;
 }
@@ -350,7 +353,8 @@ footer .containerFooter .boxIcon .iconFooter a {
   transition: all 0.5s ease;
 }
 footer .containerFooter .boxIcon .iconFooter a:hover {
-  opacity: 0.6;
+  opacity: 4;
+  filter: contrast(120%);
 }
 footer .boxAviso {
   display: flex;
@@ -379,6 +383,216 @@ footer .boxAviso li a:hover {
   opacity: 0.9;
 }
 
+.animation {
+  width: 200%;
+  left: 0;
+  bottom: 0px;
+  position: fixed;
+  height: 100px;
+  overflow: hidden;
+}
+.animation .wave .wave1 {
+  position: absolute;
+  background: url("../assets/img/wave.svg");
+  z-index: 10;
+  opacity: 2;
+  width: 5000px;
+  height: 90px;
+  animation-delay: 0s;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  animation: animate1 30s linear infinite;
+  bottom: 0;
+}
+.animation .wave .wave2 {
+  position: absolute;
+  background: url("../assets/img/wave.svg");
+  animation: animate2 15s linear infinite;
+  z-index: 9;
+  opacity: 0.7;
+  width: 3000px;
+  height: 95px;
+  animation-delay: -5s;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  bottom: 5px;
+}
+.animation .wave .wave3 {
+  position: absolute;
+  background: url("../assets/img/wave.svg");
+  animation: animate3 20s linear infinite;
+  z-index: 8;
+  opacity: 0.5;
+  width: 3000px;
+  height: 100px;
+  animation-delay: -3s;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  bottom: 10px;
+}
+.animation .wave .wave4 {
+  position: absolute;
+  background: url("../assets/img/wave.svg");
+  animation: animate4 25s linear infinite;
+  z-index: 7;
+  opacity: 0.3;
+  width: 3000px;
+  height: 105px;
+  animation-delay: 2s;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  bottom: 15px;
+}
+
+@keyframes animate1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 2000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+@keyframes animate3 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@keyframes animate4 {
+  0% {
+    background-position-x: 2000px;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}
+/*
+@keyframes animate2{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-40%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-5%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-25%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-40%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-80%) translateZ(0) scaleY(1);
+    }
+}
+/*
+
+
+@keyframes animate2{
+    0% {
+        transform: translateX(-5%) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-15%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-45%) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-18%) translateZ(0) scaleY(0.6);
+    }
+    100% {
+        transform: translateX(-36%) translateZ(0) scaleY(1);
+    }
+}
+
+/*
+@keyframes animate2{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate3{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+@keyframes animate4{
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55);
+    }
+    100% {
+        transform: translateX(-50) translateZ(0) scaleY(1);
+    }
+}
+/*
+.wave1{
+    position: absolute;
+    left: 0;
+    width: 200%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    background-size: 50% 80px;
+    animation: animate 18s linear infinite;
+}
+*/
 .sectionPrimaria {
   background-image: url("../assets/img/homenuevo.jpg");
   width: 100%;
@@ -1144,7 +1358,7 @@ footer .boxAviso li a:hover {
   transition: all 0.1s;
 }
 .sectionVeintitres .topicContainer .masContainer:hover, .sectionVeinticinco .topicContainer .masContainer:hover, .sectionVeinticuatro .topicContainer .masContainer:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .sectionVeinticuatro {
@@ -1436,18 +1650,15 @@ main {
 }
 
 .error {
-  background-color: #F7F0F1;
-  display: flex;
-  flex-direction: none;
-  flex-wrap: none;
-  justify-content: center;
-  align-items: center;
-  gap: none;
+  background-image: linear-gradient(to right bottom, #07393c, #2c585a, #4d7a7b, #6f9d9d, #92c1c0, #9eced4, #addae7, #bee6fa, #c8daf8, #d6cded, #e2c1d9, #e5b8c1);
+  width: 100%;
+  height: 100vh;
 }
 .error img {
-  width: 80vw;
-  height: 90vh;
+  width: 70vw;
+  height: 70vh;
   padding: 2rem;
+  margin-left: 15rem;
 }
 
 .cardHome {
@@ -1677,7 +1888,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -2233,7 +2444,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -2483,6 +2694,9 @@ main {
     font-size: 1.3rem;
     padding: 1rem 1rem 1rem 1rem;
   }
+  .error img {
+    margin-left: 10rem;
+  }
 }
 .cardHome {
   width: 21.875rem;
@@ -2711,7 +2925,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -3327,7 +3541,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -3376,6 +3590,14 @@ main {
   }
   header nav .navBarContainer {
     width: 100px;
+  }
+  header nav .navBarContainer .hamburgerMenu {
+    top: 17px;
+    left: 17px;
+    height: 25px;
+  }
+  header nav .navBarContainer .line {
+    width: 30px;
   }
   header nav .iconNavBar a img {
     width: 44px;
@@ -3655,6 +3877,11 @@ main {
     margin: 0.1rem;
     font-size: 0.9rem;
   }
+  .error img {
+    width: 80vw;
+    padding: 1.5rem;
+    margin-left: 5rem;
+  }
 }
 .cardHome {
   width: 21.875rem;
@@ -3883,7 +4110,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -4484,7 +4711,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -4888,7 +5115,9 @@ main {
     margin: 20px;
   }
   .error img {
-    padding: 2rem;
+    width: 90vw;
+    margin-left: 2rem;
+    padding: 1rem;
   }
 }
 .cardHome {
@@ -5118,7 +5347,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -5178,6 +5407,14 @@ main {
   }
   header nav .navBarContainer {
     width: 80px;
+  }
+  header nav .navBarContainer .hamburgerMenu {
+    top: 15px;
+    left: 15px;
+    height: 22px;
+  }
+  header nav .navBarContainer .line {
+    width: 28px;
   }
   header nav .logo {
     display: none;
@@ -5408,7 +5645,9 @@ main {
     font-size: 0.9rem;
   }
   .error img {
+    width: 98vw;
     padding: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 .cardHome {
@@ -5638,7 +5877,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;
@@ -5940,7 +6179,7 @@ main {
   transition: all 0.3s;
 }
 .cardDestacadoSkin:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .cardDestacadoSkin div {
   width: 100%;

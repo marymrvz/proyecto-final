@@ -1,9 +1,11 @@
 .error {
-    background-color: $background-color;
-    @include flex (none, none, center, center, none);
+    background-image: linear-gradient(to right bottom, #07393c, #2c585a, #4d7a7b, #6f9d9d, #92c1c0, #9eced4, #addae7, #bee6fa, #c8daf8, #d6cded, #e2c1d9, #e5b8c1);
+    width: 100%;
+    height: 100vh;
     img {
-        width: 80vw;
-        height: 90vh;
+        width: 70vw;
+        height: 70vh;
         padding: 2rem;
+        margin-left: 15rem;
     }
 }

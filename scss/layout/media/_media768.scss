@@ -5,6 +5,14 @@
             @include flex(row, nowrap, none, center, none);
             .navBarContainer {
                 width: 100px;
+                .hamburgerMenu{
+                    top: 17px;
+                    left: 17px;
+                    height: 25px;
+                }
+                .line {
+                    width: 30px;
+                }
             }
             .iconNavBar {
                 a {
@@ -308,6 +316,13 @@
                     }
                 }
             }
+        }
+    }
+    .error {
+        img {
+            width: 80vw;
+            padding: 1.5rem;
+            margin-left: 5rem;
         }
     }
 }
