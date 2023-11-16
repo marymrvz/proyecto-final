@@ -438,7 +438,7 @@ footer .boxAviso li a:hover {
   opacity: 0.3;
   width: 3000px;
   height: 105px;
-  animation-delay: 2s;
+  animation-delay: 0s;
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   bottom: 15px;
